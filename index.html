@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogeshwara Rao Frontend 1 Module test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/1llAcleLs0UDr5ysUl_C4aHM-vN70HGTy7gjlM78SLsPCOijj7oosBLQc26G2daqOg" type="image/x-icon">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand d-lg-none d-md-block" href="#">Make My Tour</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#part1">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#table1">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#aboutus">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary text-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--banner-->
+    <section class="container-fluid mb-4">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://karnatakatourism.org/wp-content/uploads/2020/06/P10-gallery.jpg" class="d-block w-100" alt="image2" height="874">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="text-bg-danger"><b>Hampi</b></h5>
+                  <p class="text-bg-dark"><b>Explore The Golden Era of Vijayanagara</b></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.noblehousetours.com/wp-content/uploads/2019/02/seven-wonders-of-the-world.jpg" class="d-block w-100" alt="image2" height="874">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="text-bg-danger"><b>Taj Mahal</b></h5>
+                  <p class="text-bg-dark"><b>Explore The Monument of love</b></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.outlookindia.com/outlooktraveller/public/uploads/articles/explore/wgwgwg.jpg" class="d-block w-100" alt="image3" height="874">
+                <div class="carousel-caption d-md-block">
+                  <h5  class="text-bg-danger"><b>Jammu & Kashmir</b></h5>
+                  <p class="text-bg-dark"><b>Explore The Head of India City of Snow</b></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.noblehousetours.com/wp-content/uploads/2019/02/best-places-to-travel-in-india.jpg" class="d-block w-100" alt="image2" height="874">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="text-bg-danger"><b>India-Gate</b></h5>
+                  <p class="text-bg-dark"><b>Explore the city of Delhi also know as Indraprastha</b></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon text-bg-danger" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon text-bg-danger" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <!--Features-->
+    <h1 class="container-fluid mb-4 text-danger-emphasis"><u>Book Your Vehicle</u></h1>
+    <section class="container-fluid" id="part1">
+        <div class="container m-auto">
+            <div class="row">
+              <div class="col-sm mb-4">
+                <div class="card w-100" id="card1">
+                    <div class="card-header">Bike</div>
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDgFjNg3-USyLmzyg-6d6kDwR-giICKdW7EA&usqp=CAU" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Book a Bike</h5>
+                      <p class="card-text">Bike And Explore City On a Two Wheeler.</p>
+                      <a href="https://sukuto.com/bangalore/bike-rentals?campaignid=11812374224&adgroupnid=118432905081&keyword=bike%20rentals%20in%20bangalore&gclid=EAIaIQobChMIzNOM2_Lz_AIVCtdMAh1DVgqpEAAYASAAEgIf2_D_BwE" class="btn btn-primary">Trip on Bike</a>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Scotty</li>
+                        <li class="list-group-item">Bike</li>
+                      </ul>
+                      <div class="card-body">
+                        <a href="#card1" class="card-link">Card link</a>
+                        <a href="#card1" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                    <div class="card-footer">Enjoy the ride</div>
+                  </div>
+              </div>
+              <div class="col-sm mb-4">
+                <div class="card w-100" id="card2">
+                    <div class="card-header">Car</div>
+                    <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Book a Cab</h5>
+                      <p class="card-text">Cab to Explore City With Your Friendly Driver.</p>
+                      <a href="https://book.olacabs.com/" class="btn btn-primary">Trip in Car</a>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Mini</li>
+                        <li class="list-group-item">Prime SUV</li>
+                      </ul>
+                      <div class="card-body">
+                        <a href="#card2" class="card-link">Card link</a>
+                        <a href="#card2" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                    <div class="card-footer">Enjoy the ride</div>
+                  </div>
+              </div>
+              <div class="col-sm mb-4">
+                <div class="card w-100" id="card3">
+                    <div class="card-header">Bike</div>
+                    <img class="card-img-top" src="data:image/jpeg;base64,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Lo7oxBRUopIm3YQ7jC7W6VzxZ7pDvJ9AA2BVFiFG7DZzR1FxHc9yyu8CSInksL9nGMvlIO3Ud4vfK0cVwuGpjMVREyWN21rxcX3Ecx6RrQFOhyj+kWkzWtdFTuDpDcOc03EY3697+jdtPMZ1ivAjSvv3NVTwA+4daaMDma11jbrcVz6TgIaCONxB7m8zIGxm3Q4udbyICoqdrnubFExz3uIaxjRdzjuAAX6L4L9CvsbAXS2dUzWMpGsMA8GJp5m3NzvJ6AulopoRR4cL00V5CLOlkOeVw38r3I1bGgDoUmQBERAEREBx9JcAirqd9PPfK6xa5ps+N7dbXsO5wPrGwqosWoa6g5NXTvmjGypp252uaNhljGuN1rX3X2XV6ogPzVVcIETQRCxznfD5DQeneeq3auPh8dZXyl1PBLUSPNi5rSIxa9gXnkxtG6585X6lfRxuN3RsJ5y0E+WyzNaBqAsEBX3BxweChPdNW4S1RbZtva4Gnwmx32uO93YN97DREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQH//2Q==" alt="bus image">
+                    <div class="card-body">
+                      <h5 class="card-title">Book a Bus</h5>
+                      <p class="card-text">Bus to Explore City With Your Mega Family.</p>
+                      <a href="https://www.redbus.in/" class="btn btn-primary">Trip in Bus</a>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Non-A/C</li>
+                        <li class="list-group-item">Luxury A/C</li>
+                      </ul>
+                      <div class="card-body">
+                        <a href="#card3" class="card-link">Card link</a>
+                        <a href="#card3" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                    <div class="card-footer">Enjoy the ride</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!--Selector-->
+    <section class="container-fluid mb-4">
+        <h1 class="container-fluid mb-4 text-danger"><u>Select As Per Your Comfort</u></h1>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Your Bike 🛵</option>
+            <option value="1">Electric</option>
+            <option value="2">Scooty</option>
+            <option value="3">Bike</option>
+          </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Your Car 🚖</option>
+            <option value="1">Mini</option>
+            <option value="2">Sedan</option>
+            <option value="3">Suv</option>
+          </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Your Bus 🚍</option>
+            <option value="1">Non-A/C</option>
+            <option value="2">A/C</option>
+            <option value="3">Luxury A/C</option>
+          </select>
+    </section>
+    <!--table-->
+    <section class="container-fluid mb-4" id="table1">
+        <h1 class="container-fluid mb-3 text-danger"><u>Pricing Table</u></h1>
+        <table class="table">
+            <thead class="border-bottom border-dark">
+              <tr>
+                <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                <th scope="col">No.</th>
+                <th scope="col">Type</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Price/Day</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">1</th>
+                <td>Scooty</td>
+                <td>Honda Dio</td>
+                <td>₹100</td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">2</th>
+                <td>Scooty</td>
+                <td>Ather</td>
+                <td>₹100</td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">3</th>
+                <td>Bike</td>
+                <td>Hero</td>
+                <td>₹100</td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">4</th>
+                <td>Bike</td>
+                <td>Pulsar</td>
+                <td>₹150</td>
+              </tr> <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">5</th>
+                <td>Bike</td>
+                <td>Royal Enfield</td>
+                <td>₹250</td>
+              </tr> <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">6</th>
+                <td>Car</td>
+                <td>Mini</td>
+                <td>₹300</td>
+              </tr> <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">7</th>
+                <td>Car</td>
+                <td>sedan</td>
+                <td>₹400</td>
+              </tr> <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">8</th>
+                <td>Car</td>
+                <td>SUV</td>
+                <td>₹500</td>
+              </tr> <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">9</th>
+                <td>Bus</td>
+                <td>Mini With A/C</td>
+                <td>₹1000</td>
+              </tr> <tr>
+                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                <th scope="row">10</th>
+                <td>Bus</td>
+                <td>Mega With A/C</td>
+                <td>₹1500</td>
+            </tbody>
+          </table>
+    </section>
+    <!--Form-->
+    <section class="container-fluid mb-4">
+        <h1 class="container-fluid mb-3 text-danger"><u>Register Your Trip</u></h1>
+        <form action="post">
+            <div>
+                <div class="row">
+                  <div class="col-sm mb-3">
+                    <input type="text" name="first name" id="info1" class="form-control" placeholder="First Name">
+                  </div>
+                  <div class="col-sm mb-3">
+                    <input type="text" name="last name" id="info2" class="form-control" placeholder="Last Name">
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" name="last name" id="info2" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" name="last name" id="info2" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" name="last name" id="info2" class="form-control" placeholder="Confirm Password">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Trip</button>
+        </form>
+    </div>
+    </section>
+    <!--about us-->
+    <section class="container-fluid">
+        <h1 class="container-fluid text-danger" id="aboutus"><i><u>About Us</u></i></h1>
+        <p>Nurtured from the seed of a single great idea - to empower the traveller - MakeMyTour is a pioneer in India’s online travel industry. Founded in the year 2000 by Deep Kalra, MakeMyTour came to life to empower the Indian traveller with instant bookings and comprehensive choices. The company initiated its journey serving the US-India travel market offering a range of best-value products and services powered by technology and round-the-clock customer support.After consolidating its position in the market as a brand recognised for its reliability and transparency, MakeMyTrip launched its India operations in 2005. With more and more Indians initiating to transact online with IRCTC and new opportunities with the advent of low cost carriers, MakeMyTrip offered travellers the convenience of booking travel online with a few clicks.</p>
+    </section>
+    <!--Contact us-->
+    <section class="container-fluid">
+        <h1 class="container-fluid text-danger" id="contact"><u>Contact Us</u></h1>
+        <p>mail on:abc123@gmail.com</p>
+        <p>Toll Free:1234567892;</p>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
